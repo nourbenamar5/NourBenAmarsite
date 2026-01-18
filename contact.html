@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Nour</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div>
+        <h1>Nour Ben Amar</h1>
+        <p class="subtitle">Étudiante en génie informatique</p>
+      </div>
+      <div class="avatar"></div>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="competences.html">Compétences</a>
+      <a href="stages.html">Stages</a>
+      <a href="events.html">Événements</a>
+      <a href="matieres.html">Matières</a>
+      <a href="passions.html">Passions</a>
+      <a href="quizz.html">Quizz</a>
+      <a href="temoignage.html">Témoignage</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="title">Contact</h2>
+
+  <section class="card">
+    <h3>Envoyer un message</h3>
+    <form id="contactForm">
+      <label for="nom">Nom</label>
+      <input id="nom" type="text" required>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" required>
+
+      <label for="sujet">Sujet</label>
+      <input id="sujet" type="text" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" required></textarea>
+
+      <div class="actions">
+        <button type="submit">Envoyer</button>
+        <button type="reset">Effacer</button>
+      </div>
+    </form>
+
+    <p id="confirm" class="meta"></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 - Nour</p>
+</footer>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("confirm").textContent =
+      "Message enregistré.";
+  });
+</script>
+
+</body>
+</html>

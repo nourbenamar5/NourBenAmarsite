@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Times New Roman", Times, serif;
+  background: #F4F6F0;
+  color: #1f2a1f;
+  line-height: 1.6;
+}
+.container{
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+.header{
+  background: white;
+  border-bottom: 3px solid #C8D5B9;
+  padding: 15px 0;
+}
+
+.header h1{
+  color: #6B8E5A;
+  font-size: 32px;
+}
+
+.subtitle{
+  color: #555;
+  font-size: 18px;
+}
+
+.menu{
+  margin-top: 12px;
+}
+
+.menu a{
+  display: inline-block;
+  margin: 4px;
+  padding: 8px 12px;
+  background: #F4F6F0;
+  border: 1px solid #d9e2d4;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1f2a1f;
+}
+
+.menu a:hover{
+  background: #C8D5B9;
+}
+
+.title{
+  color: #6B8E5A;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.card{
+  background: white;
+  border: 1px solid #d9e2d4;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card h3{
+  color: #6B8E5A;
+  margin-bottom: 8px;
+}
+
+ul{
+  padding-left: 20px;
+}
+
+label{
+  display: block;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d9e2d4;
+  border-radius: 10px;
+  background: #F4F6F0;
+}
+
+textarea{
+  min-height: 120px;
+}
+
+button, input[type="button"]{
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: 1px solid #d9e2d4;
+  background: #C8D5B9;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover, input[type="button"]:hover{
+  background: #9CAF88;
+}
+.btn{
+  display: inline-block;
+  padding: 8px 12px;
+  background: #C8D5B9;
+  border: 1px solid #d9e2d4;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1f2a1f;
+}
+
+.btn:hover{
+  background: #9CAF88;
+}
+
+.footer{
+  text-align: center;
+  color: #555;
+  padding: 20px 0;
+}

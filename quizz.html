@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizz - Nour</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div>
+        <h1>Nour Ben Amar</h1>
+        <p class="subtitle">Étudiante en génie informatique</p>
+      </div>
+      <div class="avatar"></div>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Accueil</a>
+      <a href="parcours.html">Parcours</a>
+      <a href="competences.html">Compétences</a>
+      <a href="stages.html">Stages</a>
+      <a href="events.html">Événements</a>
+      <a href="matieres.html">Matières</a>
+      <a href="passions.html">Passions</a>
+      <a href="quiz.html">Quizz</a>
+      <a href="temoignage.html">Témoignage</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="title">Quiz</h2>
+
+  <section class="card">
+    <p class="meta">Réponds aux 10 questions puis clique sur “Valider”.</p>
+
+    <form id="quizForm">
+      <div class="card">
+        <p><strong>Q1.</strong> HTML sert principalement à :</p>
+        <label><input type="radio" name="q1" value="a"> Mettre en forme</label>
+        <label><input type="radio" name="q1" value="b"> Structurer une page</label>
+        <label><input type="radio" name="q1" value="c"> Gérer une base de données</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q2.</strong> CSS sert principalement à :</p>
+        <label><input type="radio" name="q2" value="a"> Mettre en forme</label>
+        <label><input type="radio" name="q2" value="b"> Créer une table SQL</label>
+        <label><input type="radio" name="q2" value="c"> Compiler du code</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q3.</strong> La balise sémantique pour une navigation est :</p>
+        <label><input type="radio" name="q3" value="a"> &lt;nav&gt;</label>
+        <label><input type="radio" name="q3" value="b"> &lt;span&gt;</label>
+        <label><input type="radio" name="q3" value="c"> &lt;u&gt;</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q4.</strong> Pour lier un fichier CSS externe on utilise :</p>
+        <label><input type="radio" name="q4" value="a"> &lt;script&gt;</label>
+        <label><input type="radio" name="q4" value="b"> &lt;link&gt;</label>
+        <label><input type="radio" name="q4" value="c"> &lt;style src="..."&gt;</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q5.</strong> En JavaScript, pour récupérer un élément par id :</p>
+        <label><input type="radio" name="q5" value="a"> document.getElementById()</label>
+        <label><input type="radio" name="q5" value="b"> document.getElementsByName()</label>
+        <label><input type="radio" name="q5" value="c"> window.getId()</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q6.</strong> L'événement “click” se déclenche :</p>
+        <label><input type="radio" name="q6" value="a"> au survol</label>
+        <label><input type="radio" name="q6" value="b"> au clic</label>
+        <label><input type="radio" name="q6" value="c"> au chargement de la page uniquement</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q7.</strong> Le sélecteur CSS pour une classe est :</p>
+        <label><input type="radio" name="q7" value="a"> #menu</label>
+        <label><input type="radio" name="q7" value="b"> .menu</label>
+        <label><input type="radio" name="q7" value="c"> menu</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q8.</strong> Le sélecteur CSS pour un id est :</p>
+        <label><input type="radio" name="q8" value="a"> #bloc</label>
+        <label><input type="radio" name="q8" value="b"> .bloc</label>
+        <label><input type="radio" name="q8" value="c"> bloc</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q9.</strong> Une liste non ordonnée en HTML se fait avec :</p>
+        <label><input type="radio" name="q9" value="a"> &lt;ol&gt;</label>
+        <label><input type="radio" name="q9" value="b"> &lt;ul&gt;</label>
+        <label><input type="radio" name="q9" value="c"> &lt;li&gt; seul</label>
+      </div>
+
+      <div class="card">
+        <p><strong>Q10.</strong> Pour exécuter du JavaScript externe on utilise :</p>
+        <label><input type="radio" name="q10" value="a"> &lt;link&gt;</label>
+        <label><input type="radio" name="q10" value="b"> &lt;script src="..."&gt;</label>
+        <label><input type="radio" name="q10" value="c"> &lt;meta&gt;</label>
+      </div>
+
+      <div class="actions">
+        <input type="button" value="Valider" id="btnValider">
+        <button type="reset">Réinitialiser</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="card" style="margin-top:16px;">
+    <h3>Résultat</h3>
+    <p id="scoreTxt">Ta note apparaîtra ici.</p>
+    <div id="correction"></div>
+  </section>
+</main>
+
+<script src="js/quiz.js"></script>
+</body>
+</html>
